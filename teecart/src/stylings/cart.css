@@ -1,0 +1,165 @@
+.cart-container{
+    display: flex;
+    width: 80%;
+    
+    gap: 10px;
+}
+
+.payment-info{
+    width: 25%;
+   background-color: rgb(1, 197, 197);
+   min-height: 75vh;
+}
+
+.shopping-cart{
+    margin-top: 0;
+    width: 75%;
+    background-color: rgba(111, 111, 111, 0.2);
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+  .cart-table {
+    margin: auto;
+    margin-top: 10px;
+    width: 95%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures fixed column widths */
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 12px 15px;
+    /* border: 1px solid #ddd; */
+    text-align: left;
+  }
+  
+  .cart-table th {
+    font-weight: bold;
+  }
+  
+  .cart-table tr{
+    /* border-top: 1px solid #707070; */
+  border-bottom: 1px solid #707070;
+  }
+  /* Define column widths */
+  .product-column {
+    width: 40%;
+  }
+  
+  .size-column,
+  .quantity-column,
+  .total-column {
+    width: 18.33%; /* (100% - 40% - 5%) / 3 */
+  }
+  
+  
+  .cancel-column {
+    width: 5%;
+  }
+  
+  .cart-product,
+  .cart-size,
+  .cart-quantity,
+  .cart-price {
+    padding: 5px;
+  }
+  
+  .cart-cancel {
+    color: red;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .cart-cancel:hover {
+    color: darkred;
+  }
+  .cart-cancel img{
+    height: 20px;
+    width: 20px;
+  }
+  .line hr{
+    color: #333;
+    height: 3px;
+    fill: antiquewhite;
+  }
+
+  .cart-product{
+    display: flex;
+  }
+  .cart-product-name{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    /* margin-left:5px */
+  }
+  .cart-product-name h1{
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  .cart-product span{
+    font-weight: 50;
+  }
+
+  .cart-product-image{
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .cart-product-image img{
+    width: 75px;
+    height: auto;
+  }
+
+  .subtotal-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .subtotal-row{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line{
+    width: 100%;
+    color: #333;
+  }
+
+  .buy-now{
+    width: 100%;
+    display: flex;
+  }
+  
+  .buy-now button {
+    width: 100%;
+    background-color: black;
+    color: rgb(1, 197, 197);
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    margin-right: 0;
+  }
+  
+  .buy-now button:hover {
+    background-color:rgb(1, 197, 197);
+    /* Darker blue on hover */
+    color: black;
+  }

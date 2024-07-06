@@ -1,0 +1,186 @@
+.product-page {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-images {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.main-image {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  /* overflow: hidden; */
+}
+
+.main-image img{
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+/* .main-image{
+    overflow: hidden;
+    
+  } */
+
+.thumbnails {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  /* max-height: 851px; */
+  overflow: hidden  ;
+}
+
+.thumbnail {
+  margin: 5px;
+  /* margin-top: 0; */
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.thumbnail.active {
+  border-color: #007bff;
+}
+
+.product-details {
+  width: 50%;
+  padding: 10px;
+}
+.product-quantitiy{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.increment-decrement button{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+.increment-decrement button:hover{
+  background-color: #333;
+  color: white;
+}
+
+.product-quantitiy input{
+  font-size: 15px;
+  height: 30px; /* Match the button height */
+  width: 50px;
+  text-align: center;
+  line-height: 30px; /* Center text vertically */
+  padding: 0;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  box-sizing: border-box; /* Include padding and border in the total width and height */ 
+  background-color: white;
+  color: black;
+}
+.product-quantitiy label{
+  font-weight: bold ;
+  margin-right: 30px;
+}
+.product-quantitiy input:focus{
+  outline: none; /* Remove default outline on focus */
+  border-color: #555; /* Optional: Darken border on focus */
+}
+
+.product-sizes{
+  font-weight: bold ;
+  display: flex;
+  align-items: center;
+}
+
+.product-sizes label{
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.product-sizes label:focus{
+  outline: none;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.product-options {
+  margin-top: 15px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 10px;
+  /* Spacing between labels and inputs */
+}
+
+.product-options label {
+  width: 50px;
+  text-align: right;
+}
+
+.product-options input[type="number"],
+.product-options select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.add-to-cart{
+  width: 100%;
+  display: flex;
+}
+
+.add-to-cart button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  margin-right: 0;
+}
+
+.add-to-cart button:hover {
+  background-color: #333;
+  /* Darker blue on hover */
+  color: white;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media (max-width: 1000px){
+  .product-page{
+    flex-direction: column;
+  }
+  .product-images{
+    width: 100%;
+  }
+  .product-details{
+    width: 100%;
+  }
+}

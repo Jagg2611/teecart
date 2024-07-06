@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+} */
+
+.auth-container {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header .text {
+    font-family: "Knewave", system-ui;
+    font-size: 30px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.auth-inputs {
+    margin-bottom: 20px;
+}
+
+.auth-input {
+    /* width: 350px; */
+    position: relative;
+    /* margin:auto; */
+    margin-bottom: 20px;  
+}
+
+.auth-input img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.auth-input input {
+    width: 85%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+.not-User {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+}
+
+.not-User span {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.not-User span:hover {
+    text-decoration: underline;
+}
+
+.auth-submit-container {
+    margin-top: 20px;
+}
+
+.auth-submit {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-submit:hover {
+    background-color: #007bb5;
+}
+
+.password-toggle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.auth-submit.disabled {
+    background-color: #b2dffc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.auth-input input:focus {
+    outline: 1px solid #333;
+}
