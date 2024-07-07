@@ -5,12 +5,16 @@ Place orders easily
 User authentication and authorization
 Responsive design
 Technologies Used
+
+
 Frontend:
 
-HTML
-CSS
-JavaScript
-React
+1. HTML
+2. CSS
+3. JavaScript
+4. React
+
+   
 Backend:
 
-Appwrite
+1. Appwrite
